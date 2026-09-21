@@ -1,89 +1,121 @@
-/* General Page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f7f5;
+    background-color: #f5f7fa;
     color: #333;
 }
 
-
-/* Introduction Section */
-
 .hero {
     min-height: 100vh;
-
     display: flex;
-    flex-direction: column;
-
-    justify-content: center;
     align-items: center;
-
-    text-align: center;
-
-    padding: 30px;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
 }
 
-
-/* Profile Photo */
-
 .hero img {
-    width: 180px;
-    height: 180px;
-
+    width: 280px;
+    height: 280px;
     object-fit: cover;
-
     border-radius: 50%;
+    border: 5px solid #4caf50;
+}
 
+.intro {
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 42px;
     margin-bottom: 20px;
 }
 
-
-/* Full Name */
-
-.hero h1 {
-    font-size: 40px;
-    margin: 10px 0;
+.intro p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
-
-
-/* Introduction */
-
-.intro {
-    max-width: 650px;
-
-    line-height: 1.6;
-}
-
-
-/* Tagline */
 
 .tagline {
     font-weight: bold;
-
-    margin: 15px 0 25px;
+    margin-top: 15px;
 }
-
-
-/* Learn More Button */
 
 .button {
     display: inline-block;
-
+    margin-top: 15px;
     padding: 12px 25px;
-
-    background-color: #873e64e0;
-
+    background-color: #4caf50;
     color: white;
-
     text-decoration: none;
-
     border-radius: 8px;
 }
 
-
-/* Button Hover */
-
 .button:hover {
-    background-color: #1b5e20;
+    opacity: 0.85;
+}
+
+
+about {
+    padding: 80px 10%;
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about ul {
+    margin-left: 25px;
+    line-height: 2;
+}
+
+.skills {
+    padding: 80px 10%;
+    background-color: #f5f7fa;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    line-height: 1.6;
 }
