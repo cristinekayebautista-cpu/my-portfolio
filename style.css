@@ -1,0 +1,89 @@
+/* General Page */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #333;
+}
+
+
+/* Introduction Section */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* Profile Photo */
+
+.hero img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+}
+
+
+/* Full Name */
+
+.hero h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+
+/* Introduction */
+
+.intro {
+    max-width: 650px;
+
+    line-height: 1.6;
+}
+
+
+/* Tagline */
+
+.tagline {
+    font-weight: bold;
+
+    margin: 15px 0 25px;
+}
+
+
+/* Learn More Button */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #873e64e0;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+
+/* Button Hover */
+
+.button:hover {
+    background-color: #1b5e20;
+}
